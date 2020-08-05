@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    color: #222;
+    font-family: arial,sans-serif;
+    
+}
+
+.all-items{
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+.google-wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*
+=============================
+Header Area CSS
+=============================
+*/
+
+.header-top{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-top li a {
+	text-decoration: none;
+	font-size: 13px;
+	padding-left: 20px;
+	color: rgba(0,0,0,.87);
+}
+
+.header-top li a:hover {
+	text-decoration: underline;
+	color: rgba(0,0,0,.6);
+}
+
+.header-top li.image img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: -5px;
+}
+
+li .fa {
+	color: rgba(0,0,0,.6);
+	font-size: 20px;
+}
+li .fa:hover{
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+
+/*
+=============================
+Main Area CSS
+=============================
+*/
+
+.main-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(78vh - 12px);
+    text-align: center;
+}
+
+/* .main-area{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -50px;
+
+} */
+
+.google-image{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+input[type="text"]{
+    width: 585px;
+    height: 45px;
+    outline: none;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0 , 0, .87);
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    margin: 25px 0;
+    padding: 0 40px;
+    position: relative;
+}
+input[type="text"]:hover,
+input[type="text"]:focus {
+    box-shadow: 1px 0px 6px#ddd;
+}
+input[type="submit"]{
+    padding: 0px 16px;
+    font-size: 14px;
+    color: #5F6368;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    margin: 11px 4px;
+    min-width: 54px;
+    text-align: center;
+    height: 36px;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+.main-area span{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.main-area span a{
+    font-size: 12px;
+    color: #1a0dab;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.main-area span a:hover,
+.main-area span a:visited{
+    text-decoration: underline;
+}
+
+.input-box{
+    position: relative;
+}
+
+.search,
+.microphone{
+    position: absolute;
+    top: 20px;
+    color: #c6c6c6;
+    font-weight: normal;
+}
+.search{
+    left: 20px;
+}
+.microphone{
+   right: 20px;
+   cursor: pointer;
+}
+
+
+
+/*
+=============================
+Footer Area CSS
+=============================
+*/
+
+.footer-area a, p{
+    color: #5f6368;
+}
+.footer-top{
+    background: #f2f2f2;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e4e4e4 ;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 15px 33px;
+    background: #f2f2f2 ;
+    margin: 0;
+}
+
+.footer-bottom-left,
+.footer-bottom-right{
+    display: flex;
+}
+
+.footer-bottom-left li,
+.footer-bottom-left li{
+    list-style: none; 
+}
+
+.footer-bottom-left li a,
+.footer-bottom-right li a{
+    text-decoration: none;
+    color: #5f6368;
+
+}
+
+.footer-bottom-left li a{
+    margin-right: 25px;
+}
+.footer-bottom-right li a{
+    margin-left: 25px;
+}
+
+.footer-bottom-left li a:hover,
+.footer-bottom-right li a:hover{
+    text-decoration: underline;
+
+}
+/* ================================================== End ============================================= */
+
+
+/*
+=============================
+Responsive CSS
+=============================
+*/
+
+@media screen and (min-width: 319px) and (max-width: 575px){
+    .footer-bottom{
+        font-size: 10px;
+    }
+
+    .footer-bottom-left li a{
+        margin-right: 10px;
+    }
+    .footer-bottom-right li a{
+        margin-left: 10px;
+    }
+
+    input[type="text"]{
+        width: 330px;
+    }
+
+    .google-image img {
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+
